@@ -1,4 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  images: {
+    domains: [
+      "astralpaints.kwebmakerdigitalagency.com",
+      "astral-paints-landing.vercel.app",
+    ],
+  },
+};
 
 export default nextConfig;
