@@ -5,7 +5,7 @@ import { FiPhone } from "react-icons/fi";
 import { AiOutlineMail } from "react-icons/ai";
 
 export default function Footer() {
-  const comapnyImages = [
+  const companyImages = [
     {
       id: 1,
       src: "https://s3-alpha-sig.figma.com/img/4179/7ef3/d166a828eb272e1d877c33dea427ce4c?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SGWx7pqO6Yzmj07hYe-XwqFt~E5eFqxKHTWpZgJJ9Wvx5AKTaFB9B0g-QZGf8Cko2V5H7ccYeo~8AKryOUNr154Xy3NIvftKmMzIaaj9Aa9d7cVu78AYlkRDocseSzchFpsxpnsp8kBRT9GuKUlNQac~74doz3LU3AkYhpvX0YLgeg6IChlQT1sZS-n2-Y4y0NjNCGjXEU2gIzgfMlpio6kiOHewban-BnTuPTU36E7qOxq3tPe~JL~i-IzDqMDqD8f3N4vaHBs5GqhXUbFuyyXTqKU3k8I5xAB7dct7gtpcxZdj-tqJwXKsRdLp9l4MLc4UFtmJcuV0eI97YFQWwA__",
@@ -32,10 +32,34 @@ export default function Footer() {
       name: "Gem Faints",
     },
   ];
+
+  const footerContent = [
+    {
+      id: 1,
+      name: "About",
+      lists: ["About Astrals", "Paint Journey", "Group Companies"],
+    },
+    {
+      id: 2,
+      name: "Category",
+      lists: ["Interior", "Paint Journey", "Group Companies"],
+    },
+    {
+      id: 3,
+      name: "Services",
+      lists: ["Wall Painting", "Water Solutions", "Painting", "Colour Shades"],
+    },
+    {
+      id: 4,
+      name: "Downloads",
+      lists: ["Downloads", "Become A Doctor", "Blogs", "Contact"],
+    },
+  ];
   return (
     <div className="relative border-b-[15px] border-[#0060AF] h-screen">
       <div className="relative h-full">
         {/* Footer Content */}
+
         <div
           className="relative  z-10 max-w-[1206px] mx-auto"
           style={{ top: "59px" }}
@@ -44,8 +68,11 @@ export default function Footer() {
             <h1 className="text-center font-poppins font-bold text-[30px] text-[#ffff]">
               Group Company
             </h1>
+            <h1 className="text-[#EEDCB2] text-3xl font-extrabold text-center">
+              WORK IN PROGRESS
+            </h1>
             <div className="py-[68px] flex justify-center">
-              {comapnyImages.map((cImg) => (
+              {companyImages.map((cImg) => (
                 <Image
                   key={cImg.id}
                   src={cImg.src}
@@ -93,7 +120,7 @@ export default function Footer() {
           {/* Doplicated */}
           <div className="mt-[56px]">
             <div className="flex justify-between ">
-              <div className="flex justify-between items-center gap-[56px]">
+              <div className="flex justify-between  gap-[200px]">
                 <div className="">
                   <h3 className="text-[#EEDBB1] font-poppins font-bold text-[14px]">
                     Reach Us
@@ -118,21 +145,34 @@ export default function Footer() {
                     </p>
                   </div>
                 </div>
-                <h1 className="text-[#EEDCB2] text-3xl font-extrabold">
-                  WORK IN PROGRESS
-                </h1>
-                <div>
-                  <div>
-                    <ul>
-                      <li className="font-poppins text-[14px] font-bold text-[#EEDCB2]">
-                        {/* About */}
+
+                <div className="flex space-x-10">
+                  {footerContent.map((fContent) => (
+                    <ul key={fContent.id} className="flex flex-col">
+                      <li className="text-[#EEDCB2] font-poppins font-bold text-[14px] mb-2">
+                        {fContent.name}
                       </li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
+                      {fContent.lists.map((list, index) => (
+                        <li
+                          key={index}
+                          className="font-poppins font-medium text-[12px] text-[#fff] py-[13px] whitespace-nowrap"
+                        >
+                          {list}
+                        </li>
+                      ))}
                     </ul>
-                  </div>
+                  ))}
                 </div>
+
+                {/* refer here */}
+                {/* <div className="">
+                  <h3 className="text-[#EEDBB1] font-poppins font-bold text-[14px]">
+                    Sign Up To Our Newsletter
+                  </h3>
+                  <p className="font-lato font-normal text-xs text-[#FFFFFF] my-[2px] leading-5">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </p>
+                </div> */}
               </div>
             </div>
           </div>
