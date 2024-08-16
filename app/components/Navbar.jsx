@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 // position: sticky;
@@ -12,7 +13,7 @@ export default function Navbar() {
         <div className="mx-auto px-3">
           <div className="px-24 flex justify-between items-center ml-[12px]">
             <Image
-              src=" https://astral-paints-landing.vercel.app/_next/image?url=%2FImages%2Flogo.png&w=256&q=75"
+              src="https://astral-paints-landing.vercel.app/_next/image?url=%2FImages%2Flogo.png&w=256&q=75"
               alt="Logo Picture"
               width={150}
               height={48}
