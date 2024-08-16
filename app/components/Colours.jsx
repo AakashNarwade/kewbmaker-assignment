@@ -73,19 +73,17 @@ export default function Colours({ colours }) {
         <>
           <div className="flex flex-grow mt-[20px]">
             {coloursList.map((colourObj) => (
-              <>
-                <div
-                  key={colourObj.id}
-                  className="flex-none"
-                  style={{
-                    width: `calc((100% - ${16 * (6 - 1)}px) / 6)`,
-                    height: "158px",
-                    backgroundColor: colourObj.bgColour,
-                    marginRight: "16px",
-                    boxSizing: "border-box",
-                  }}
-                ></div>
-              </>
+              <div
+                key={colourObj.id}
+                className="flex-none"
+                style={{
+                  width: `calc((100% - ${16 * (6 - 1)}px) / 6)`,
+                  height: "158px",
+                  backgroundColor: colourObj.bgColour,
+                  marginRight: "16px",
+                  boxSizing: "border-box",
+                }}
+              ></div>
             ))}
           </div>
           <div className="">
