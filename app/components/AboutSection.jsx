@@ -2,7 +2,6 @@ import Image from "next/image";
 import React, { useState } from "react";
 
 export default function AboutSection({ aboutSection }) {
-  console.log("aboutSection", aboutSection);
   // Function to add margin to paragraphs
   const addMarginToParagraphs = (htmlContent) => {
     const tempDiv = document.createElement("div");

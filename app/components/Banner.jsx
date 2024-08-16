@@ -1,8 +1,6 @@
 import Image from "next/image";
 
 export default function Banner({ banners = [] }) {
-  console.log(banners);
-
   if (!banners.length) {
     return <div>No banners available</div>;
   }

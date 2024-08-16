@@ -2,8 +2,6 @@ import Image from "next/image";
 import React from "react";
 
 export default function JoinUs({ joinUsData }) {
-  console.log("joinUsData", joinUsData);
-
   return (
     <div className="relative w-full h-[428px] border-l-[15px] border-[#00AE44]">
       {/* Container for the background image */}

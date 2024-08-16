@@ -11,6 +11,7 @@ import BlogSection from "./components/BlogSection.jsx";
 import Category from "./components/Category";
 import Colours from "./components/Colours";
 import JoinUs from "./components/JoinUs";
+import Blog from "./components/Blog";
 // import Navbar from "./components/Navbar.jsx";
 
 const GET_HOME_PAGE_DATA = gql`
@@ -146,6 +147,7 @@ async function fetchData() {
 }
 
 export default function HomePage() {
+  const [alldata, setAllData] = useState(null);
   const [homeData, setHomeData] = useState(null);
   const [seoData, setSeoData] = useState(null);
   const [error, setError] = useState(null);
@@ -154,8 +156,8 @@ export default function HomePage() {
     const getData = async () => {
       try {
         const data = await fetchData();
-        console.log(data);
-
+        console.log("data", data);
+        setAllData(data);
         setHomeData(data.pages.nodes[0]?.homepage);
         setSeoData(data.pages.nodes[0]?.seo);
       } catch (err) {
@@ -184,7 +186,7 @@ export default function HomePage() {
       <ServicesSection service={homeData} />
       <Colours colours={homeData} />
       <JoinUs joinUsData={homeData} />
-      <BlogSection title={homeData.blogTitle} />
+      <Blog blogData={alldata} />
     </div>
   );
 }

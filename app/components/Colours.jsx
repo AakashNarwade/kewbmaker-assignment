@@ -1,8 +1,6 @@
 import React from "react";
 
 export default function Colours({ colours }) {
-  console.log(colours);
-
   const coloursList = [
     {
       id: 1,
@@ -86,14 +84,14 @@ export default function Colours({ colours }) {
               ></div>
             ))}
           </div>
-          <div className="">
+          {/* <div className="">
             <h3 className="font-poppins font-normal text-[15px]  text-center">
               hello
             </h3>
             <h4 className="font-poppins font-normal text-[14px] text-gray-700">
               hello
             </h4>
-          </div>
+          </div> */}
         </>
       </div>
     </div>

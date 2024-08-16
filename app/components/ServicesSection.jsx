@@ -2,8 +2,6 @@ import Image from "next/image";
 import React from "react";
 
 export default function ServicesSection({ service }) {
-  console.log("service", service);
-
   const imagesList = [
     {
       id: 1,

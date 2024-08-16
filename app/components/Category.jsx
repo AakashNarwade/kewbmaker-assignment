@@ -2,8 +2,6 @@ import Image from "next/image";
 import React from "react";
 
 export default function Category({ category }) {
-  console.log("category", category);
-
   return (
     <div className="border-l-[15px] border-[#FF9119] h-full ">
       <div className="mx-[81px] ">
