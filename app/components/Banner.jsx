@@ -19,7 +19,7 @@ export default function Banner({ banners = [] }) {
             className="object-cover w-full h-full" // Full coverage and aspect ratio
           />
           {/* Black Overlay */}
-          <div className="absolute inset-0 bg-black opacity-35"></div>
+          <div className="absolute inset-0 bg-black opacity-50"></div>
         </div>
         <div className="absolute top-6 ml-[80px] mt-[166px]">
           <h2 className="font-bold text-[40px] text-white w-[265px]">
