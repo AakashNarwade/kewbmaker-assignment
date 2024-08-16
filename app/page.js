@@ -9,6 +9,7 @@ import AboutSection from "./components/AboutSection.jsx";
 import ServicesSection from "./components/ServicesSection.jsx";
 import BlogSection from "./components/BlogSection.jsx";
 import Category from "./components/Category";
+import Colours from "./components/Colours";
 // import Navbar from "./components/Navbar.jsx";
 
 const GET_HOME_PAGE_DATA = gql`
@@ -180,6 +181,7 @@ export default function HomePage() {
       <Category category={homeData} />
       <SEO seoData={seoData} />
       <ServicesSection service={homeData} />
+      <Colours colours={homeData} />
       <BlogSection title={homeData.blogTitle} />
     </div>
   );
