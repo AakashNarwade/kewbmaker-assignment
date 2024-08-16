@@ -4,6 +4,11 @@ import { CiLocationOn } from "react-icons/ci";
 import { FiPhone } from "react-icons/fi";
 import { AiOutlineMail } from "react-icons/ai";
 
+import { FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { TiSocialFacebook } from "react-icons/ti";
+import { BiLogoYoutube } from "react-icons/bi";
+
 export default function Footer() {
   const companyImages = [
     {
@@ -52,11 +57,11 @@ export default function Footer() {
     {
       id: 4,
       name: "Downloads",
-      lists: ["Downloads", "Become A Doctor", "Blogs", "Contact"],
+      lists: ["Become A Doctor", "Blogs", "Contact"],
     },
   ];
   return (
-    <div className="relative border-b-[15px] border-[#0060AF] h-screen">
+    <div className="relative h-screen">
       <div className="relative h-full">
         {/* Footer Content */}
 
@@ -68,9 +73,7 @@ export default function Footer() {
             <h1 className="text-center font-poppins font-bold text-[30px] text-[#ffff]">
               Group Company
             </h1>
-            <h1 className="text-[#EEDCB2] text-3xl font-extrabold text-center">
-              WORK IN PROGRESS
-            </h1>
+
             <div className="py-[68px] flex justify-center">
               {companyImages.map((cImg) => (
                 <Image
@@ -163,16 +166,21 @@ export default function Footer() {
                     </ul>
                   ))}
                 </div>
+              </div>
+            </div>
+            <div className="flex justify-end mt-[-40px] mr-10 items-end gap-6 text-[#EEDBB1]">
+              <div className="h-[30px] w-[30px] flex items-center justify-center rounded-[50%] border-[0.5px] border-[#EEDBB1]">
+                <TiSocialFacebook size={20} />
+              </div>
+              <div className="h-[30px] w-[30px] flex items-center justify-center rounded-[50%] border-[0.5px] border-[#EEDBB1]">
+                <BiLogoYoutube size={20} />
+              </div>
+              <div className="h-[30px] w-[30px] flex items-center justify-center rounded-[50%] border-[0.5px] border-[#EEDBB1]">
+                <FaInstagram size={20} />
+              </div>
 
-                {/* refer here */}
-                {/* <div className="">
-                  <h3 className="text-[#EEDBB1] font-poppins font-bold text-[14px]">
-                    Sign Up To Our Newsletter
-                  </h3>
-                  <p className="font-lato font-normal text-xs text-[#FFFFFF] my-[2px] leading-5">
-                    Lorem ipsum dolor sit amet consectetur.
-                  </p>
-                </div> */}
+              <div className="h-[30px] w-[30px] flex items-center justify-center rounded-[50%] border-[0.5px] border-[#EEDBB1]">
+                <FaXTwitter size={20} />
               </div>
             </div>
           </div>
@@ -191,6 +199,17 @@ export default function Footer() {
 
         {/* Overlay */}
         <div className="absolute inset-0 bg-black opacity-35 z-0"></div>
+      </div>
+      <div className="bg-[#0060AF] py-[15px] flex justify-around items-center">
+        <h3 className=" text-[#fff] font-poppins font-semibold text-xs">
+          Terms & Conditions
+        </h3>
+        <h3 className="capitalize text-[#fff] font-poppins font-semibold text-xs">
+          Terms & Conditions
+        </h3>
+        <h3 className=" text-[#fff] font-poppins font-semibold text-xs">
+          Privacy Policy
+        </h3>
       </div>
     </div>
   );
