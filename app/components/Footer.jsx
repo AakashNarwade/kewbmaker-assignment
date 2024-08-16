@@ -205,7 +205,7 @@ export default function Footer() {
           Terms & Conditions
         </h3>
         <h3 className="capitalize text-[#fff] font-poppins font-semibold text-xs">
-          Terms & Conditions
+          all rights reserved
         </h3>
         <h3 className=" text-[#fff] font-poppins font-semibold text-xs">
           Privacy Policy
