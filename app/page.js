@@ -12,6 +12,7 @@ import Category from "./components/Category";
 import Colours from "./components/Colours";
 import JoinUs from "./components/JoinUs";
 import Blog from "./components/Blog";
+import Footer from "./components/Footer";
 // import Navbar from "./components/Navbar.jsx";
 
 const GET_HOME_PAGE_DATA = gql`
@@ -187,6 +188,7 @@ export default function HomePage() {
       <Colours colours={homeData} />
       <JoinUs joinUsData={homeData} />
       <Blog blogData={alldata} />
+      <Footer />
     </div>
   );
 }

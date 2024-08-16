@@ -54,7 +54,7 @@ export default function Blog({ blogData }) {
   const { blogSubtitle, blogTitle } = blogData?.pages?.nodes[0].homepage;
 
   return (
-    <div className="border-l-[15px] border-[#00C1DE] h-full">
+    <div className="border-l-[15px] border-[#00C1DE] h-screen">
       <div className="mx-[81px]">
         {/* Wrapper for Subtitle and Title */}
         <div className="pt-[85px]">
