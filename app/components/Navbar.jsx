@@ -16,6 +16,9 @@ export default function Navbar() {
               alt="Logo Picture"
               width={150}
               height={48}
+              onError={(e) => {
+                e.currentTarget.src = "/logo.webp"; // Path to a fallback image in your public directory
+              }}
             />
             <div className="">
               <div className="space-x-4 font-semibold capitalize text-sm flex justify-center items-center gap-[30px]  ">
