@@ -8,7 +8,7 @@ export default function Category({ category }) {
     <div className="border-l-[15px] border-[#FF9119] h-full ">
       <div className="mx-[81px] ">
         {/* Category Titles */}
-        <h2 className="text-[18px] text-[#000000] leading-5 font-poppins">
+        <h2 className="text-[18px] text-[#000000] font-medium leading-5 font-poppins">
           {category?.homeCategorySubtitle}
         </h2>
         <h1 className="my-[23px] font-bold text-3xl font-poppins text-[#000000]">
