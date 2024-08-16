@@ -53,7 +53,7 @@ export default function Colours({ colours }) {
     },
   ];
   return (
-    <div className="border-l-[15px] border-[#F5E847] h-full">
+    <div className="border-l-[15px] pb-[84px] border-[#00AE44] h-full">
       <div className="mx-[81px]">
         <div className="pt-[85px]">
           <h2 className="text-[18px] text-[#000000] leading-5 font-poppins font-medium">

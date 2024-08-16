@@ -34,7 +34,22 @@ module.exports = {
       backgroundImage: {
         "custom-gradient": "linear-gradient(to bottom, #FF9119, #E70000)",
       },
+      borderImage: {
+        "gradient-left": "linear-gradient(to bottom, #F5E847, #00AE44)",
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities, theme }) {
+      addUtilities(
+        {
+          ".border-gradient-left": {
+            borderImage: theme("borderImage.gradient-left"),
+            borderImageSlice: 1,
+          },
+        },
+        ["responsive", "hover"]
+      );
+    },
+  ],
 };
