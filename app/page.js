@@ -179,7 +179,7 @@ export default function HomePage() {
       <AboutSection aboutSection={homeData} />
       <Category category={homeData} />
       <SEO seoData={seoData} />
-      <ServicesSection title={homeData.homeServicesTitle} />
+      <ServicesSection service={homeData} />
       <BlogSection title={homeData.blogTitle} />
     </div>
   );

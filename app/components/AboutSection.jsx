@@ -22,7 +22,7 @@ export default function AboutSection({ aboutSection }) {
       className="flex gap-[73px] justify-between border-l-15 border-[#E70000]  h-full
     "
     >
-      <div className="ml-[81px] mt-[142px] max-w-[706px]">
+      <div className="mx-[81px] mt-[142px] max-w-[706px]">
         <h2 className="font-bold text-[18px] text-black font-poppins">
           {aboutSection.homeAboutSubtitle}
         </h2>

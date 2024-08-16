@@ -3,6 +3,9 @@ import Head from "next/head";
 export default function SEO({ seoData }) {
   console.log("seodata", seoData);
 
+  // Safely parse and stringify JSON-LD schema data
+  const schemaData = seoData?.schema?.raw ? JSON.parse(seoData.schema.raw) : {};
+
   return (
     <Head>
       <title>{seoData.title}</title>
@@ -18,17 +21,7 @@ export default function SEO({ seoData }) {
         property="og:image"
         content={seoData.opengraphImage?.mediaItemUrl}
       />
-      <script type="application/ld+json">
-        {JSON.stringify(JSON.parse(seoData?.schema?.raw))}
-        {/* {`
-          {
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "My Awesome Page",
-            "description": "This is an awesome page description for SEO."
-          }
-        `} */}
-      </script>
+      <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
     </Head>
   );
 }
