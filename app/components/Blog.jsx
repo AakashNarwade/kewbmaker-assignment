@@ -78,7 +78,7 @@ export default function Blog({ blogData }) {
                   height={209}
                   className="object-cover"
                 />
-                <div className="absolute bottom-0 h-[118px]  text-white pl-[29px] max-w-[269px] z-50">
+                <div className="absolute bottom-0 h-[118px]  text-white pl-[29px] max-w-[269px] z-10">
                   <h2 className="mt-[20px] font-poppins font-semibold text-[#ffff] text-[14px]">
                     {blogObj.date}
                   </h2>
@@ -115,7 +115,7 @@ export default function Blog({ blogData }) {
                   height={209}
                   className="object-cover"
                 />
-                <div className="absolute bottom-0 h-[118px]  text-white pl-[29px] max-w-[269px] z-50">
+                <div className="absolute bottom-0 h-[118px]  text-white pl-[29px] max-w-[269px] z-10">
                   <h2 className="mt-[20px] font-poppins font-semibold text-[#ffffff] text-[14px]">
                     {blogObj.date}
                   </h2>
