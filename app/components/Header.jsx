@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Navbar() {
+export default function Header() {
   return (
     <>
       <header className="bg-[#0060af] py-2 sticky top-0  left-0 right-0 w-full z-50 h-[88px] ">

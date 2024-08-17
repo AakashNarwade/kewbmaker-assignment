@@ -11,8 +11,7 @@ import Category from "./components/Category";
 import Colours from "./components/Colours";
 import JoinUs from "./components/JoinUs";
 import Blog from "./components/Blog";
-// import Footer from "./components/Footer";
-// import Navbar from "./components/Navbar.jsx";
+
 
 const GET_HOME_PAGE_DATA = gql`
   query GetHomePageData {
@@ -142,7 +141,7 @@ async function fetchData() {
     return data;
   } catch (error) {
     console.error("Apollo Client Error:", error);
-    throw error; 
+    throw error;
   }
 }
 
@@ -182,7 +181,6 @@ export default function HomePage() {
 
   return (
     <div className="">
-      {/* <Navbar seoData={seoData}/> */}
       <Banner banners={homeData.banners} />
       <AboutSection aboutSection={homeData} />
       <Category category={homeData} />
@@ -191,7 +189,6 @@ export default function HomePage() {
       <Colours colours={homeData} />
       <JoinUs joinUsData={homeData} />
       <Blog blogData={alldata} />
-      {/* <Footer /> */}
     </div>
   );
 }
