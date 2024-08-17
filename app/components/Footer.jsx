@@ -186,7 +186,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Background Image */}
         <div className="absolute inset-0 -z-10">
           <Image
             src="https://s3-alpha-sig.figma.com/img/14db/7a3c/2ece97acc56da5020794010bf24e9321?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AjOyzwgQWUQDgy8pX6v84dT1FPp8TWVm7s243adVt65U4xBW6nSsm5hNFzjfPLpoz2qGqGwTojYEf19sKs0nqh3rpi3Sx2sVMRNDYeAgPR5LYa2LhLoFOClffMbz1qSz02F9y3br~K4E-yceiKXYX4KM9UC62ds46r6aJ8vGFV6k5qlHqSVbctJrgfUDPKWwOibxCHg~8MvXrJdD-zOPosPqsIbq4AO4qrqInXMU~UmfbZEZO7w8STPEoaR2SIn8~0ldsrGWDvb3kRvHUaHse1ZASlLdFgjocKxTTajHGw7Rr~EMB1traciU2YVPr2HCiwwFLCCjIgjNj9JM~h13Ag__"
@@ -197,15 +196,16 @@ export default function Footer() {
           />
         </div>
 
-        {/* Overlay */}
         <div className="absolute inset-0 bg-black opacity-35 z-0"></div>
       </div>
       <div className="bg-[#0060AF] py-[15px] flex justify-around items-center">
         <h3 className=" text-[#fff] font-poppins font-semibold text-xs">
           Terms & Conditions
         </h3>
-        <h3 className="capitalize text-[#fff] font-poppins font-semibold text-xs">
-          all rights reserved
+        <h3 className="uppercase text-[#fff] font-poppins font-semibold text-xs flex space-x-2">
+          <span>all</span>
+          <span>rights</span>
+          <span>reserved</span>
         </h3>
         <h3 className=" text-[#fff] font-poppins font-semibold text-xs">
           Privacy Policy
@@ -214,3 +214,5 @@ export default function Footer() {
     </div>
   );
 }
+
+

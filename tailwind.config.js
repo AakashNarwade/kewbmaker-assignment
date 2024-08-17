@@ -26,10 +26,10 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"],
       },
       borderWidth: {
-        15: "15px", // Custom border width of 15px
+        15: "15px",
       },
       colors: {
-        orange: "#E70000", // Custom orange color
+        orange: "#E70000",
       },
       backgroundImage: {
         "custom-gradient": "linear-gradient(to bottom, #FF9119, #E70000)",

@@ -1,11 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-// position: sticky;
-// top: 0;
-// left: 0;
-// right: 0;
-// z-index: 1000;
+
 export default function Navbar() {
   return (
     <>
@@ -18,7 +14,7 @@ export default function Navbar() {
               width={150}
               height={48}
               onError={(e) => {
-                e.currentTarget.src = "/logo.webp"; // Path to a fallback image in your public directory
+                e.currentTarget.src = "/logo.webp";
               }}
             />
             <div className="">
@@ -77,11 +73,3 @@ export default function Navbar() {
   );
 }
 
-// border: 1px solid;
-// padding: 8px 15px;
-// color: #0060af !important;
-// border-radius: 20px;
-// background-color: #fff;
-// cursor: pointer;
-// z-index: 1;
-// position: relative;

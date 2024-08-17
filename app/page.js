@@ -7,12 +7,11 @@ import Banner from "./components/Banner.jsx";
 import SEO from "./components/SEO.jsx";
 import AboutSection from "./components/AboutSection.jsx";
 import ServicesSection from "./components/ServicesSection.jsx";
-import BlogSection from "./components/BlogSection.jsx";
 import Category from "./components/Category";
 import Colours from "./components/Colours";
 import JoinUs from "./components/JoinUs";
 import Blog from "./components/Blog";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 // import Navbar from "./components/Navbar.jsx";
 
 const GET_HOME_PAGE_DATA = gql`
@@ -143,7 +142,7 @@ async function fetchData() {
     return data;
   } catch (error) {
     console.error("Apollo Client Error:", error);
-    throw error; // Rethrow to handle in the component
+    throw error; 
   }
 }
 
@@ -174,7 +173,11 @@ export default function HomePage() {
   }
 
   if (!homeData || !seoData) {
-    return <div>Loading...</div>;
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <div>Loading...</div>
+      </div>
+    );
   }
 
   return (
@@ -188,7 +191,7 @@ export default function HomePage() {
       <Colours colours={homeData} />
       <JoinUs joinUsData={homeData} />
       <Blog blogData={alldata} />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

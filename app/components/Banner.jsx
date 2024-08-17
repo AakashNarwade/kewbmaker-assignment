@@ -13,10 +13,10 @@ export default function Banner({ banners = [] }) {
             src={
               "https://s3-alpha-sig.figma.com/img/7999/7300/254cd3c5d9ae21720ec9cc3c186add72?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WSXdGDr~eSJjrVzSkPGV04Z-u~7ZXEXK7wS5t9OvRPWVHAgW888B5lXLmp7jk3f1Hr3Sf6MiLWkJ45zdNISrQocT5WqZJVTHf5cYRuBN~apBHc-RgBwWPT0wvYwWC-Alm8e9RUisRZF4mJ7OdFXplm0ewb4Pr6QgozUSXKc5uZW0e6PYiPmDv2RwJP1LfQ5gK17ZtNB0TG7KB8XQQglNzBxLLd0K6E5bTLfJ1EwVZvP0uZxIT4dVmENKCa1bHwIdV5ctbJnOhGuxgpDLJZtgiL0q36Wot29ibElskIlJG-Y1MQnrb2ZafZFgwRzbM-iWnHsAMEV173Fr9xhAh3H4HQ__"
             }
-            alt={banners[0]?.bannersTitle || "Banner Image"} // Fallback alt text
-            width={500} // Adjust as needed
-            height={777} // Adjust as needed
-            className="object-cover w-full h-full" // Full coverage and aspect ratio
+            alt={banners[0]?.bannersTitle || "Banner Image"}
+            width={500}
+            height={777}
+            className="object-cover w-full h-full"
           />
           {/* Black Overlay */}
           <div className="absolute inset-0 bg-black opacity-50"></div>

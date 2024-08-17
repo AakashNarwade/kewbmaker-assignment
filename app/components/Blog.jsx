@@ -78,8 +78,8 @@ export default function Blog({ blogData }) {
                   height={209}
                   className="object-cover"
                 />
-                <div className="absolute bottom-0 h-[118px]  text-white pl-[29px] max-w-[269px] z-10">
-                  <h2 className="mt-[20px] font-poppins font-semibold text-[#ffff] text-[14px]">
+                <div className="absolute bottom-3 h-[118px]  text-white pl-[29px] max-w-[269px] z-10">
+                  <h2 className="mt-[20px] font-lato font-medium italic text-[#ffff] text-[14px]">
                     {blogObj.date}
                   </h2>
                   <p className="font-poppins font-semibold pt-[10px] text-[20px] text-[#ffff] leading-5">
@@ -98,9 +98,20 @@ export default function Blog({ blogData }) {
               src={blogsList[2].img}
               alt={"image" + blogsList[2].id}
               layout="fill"
-              objectFit="cover" // Ensures the image covers the div without distortion
+              objectFit="cover"
               className="z-0 "
-            />
+            />{" "}
+            <div className="absolute bottom-2 h-[118px]  text-white pl-[29px] max-w-[269px] z-10">
+              <h2 className="mt-[20px] font-lato font-medium italic text-[#ffff] text-[14px]">
+                {blogsList[2].date}
+              </h2>
+              <p className="font-poppins font-semibold pt-[10px] text-[20px] text-[#ffff] leading-5">
+                {blogsList[2].desc}
+              </p>
+              {/* <button className="bg-[#FFFFFF] text-[#000000] rounded-[20px] text-xs py-[5px] px-[10px] mt-[4px]">
+              {blogObj.buttonText}
+            </button> */}
+            </div>
             {/* <div className="absolute inset-0 bg-black opacity-35"></div> */}
           </div>
 
@@ -115,8 +126,8 @@ export default function Blog({ blogData }) {
                   height={209}
                   className="object-cover"
                 />
-                <div className="absolute bottom-0 h-[118px]  text-white pl-[29px] max-w-[269px] z-10">
-                  <h2 className="mt-[20px] font-poppins font-semibold text-[#ffffff] text-[14px]">
+                <div className="absolute bottom-2 h-[118px]  text-white pl-[29px] max-w-[269px] z-10">
+                  <h2 className="mt-[20px] font-lato font-medium italic text-[#ffffff] text-[14px]">
                     {blogObj.date}
                   </h2>
                   <p className="font-poppins font-semibold pt-[10px] text-[20px] text-[#ffff] leading-5">

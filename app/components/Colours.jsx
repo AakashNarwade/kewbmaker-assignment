@@ -8,6 +8,8 @@ export default function Colours({ colours }) {
       desc: "Lorem ipsum dolor sit amet consectetur.",
       buttonText: "Read More",
       bgColour: "#FAE0B2",
+      colourName: "Colour Name",
+      colourCode: "Colour Code",
     },
     {
       id: 2,
@@ -16,6 +18,8 @@ export default function Colours({ colours }) {
       desc: "Lorem ipsum dolor sit amet consectetur.",
       buttonText: "Read More",
       bgColour: "#FBC9C3",
+      colourName: "Colour Name",
+      colourCode: "Colour Code",
     },
     {
       id: 3,
@@ -24,6 +28,8 @@ export default function Colours({ colours }) {
       desc: "Lorem ipsum dolor sit amet consectetur.",
       buttonText: "Read More",
       bgColour: "#00C1DE",
+      colourName: "Colour Name",
+      colourCode: "Colour Code",
     },
     {
       id: 4,
@@ -32,6 +38,8 @@ export default function Colours({ colours }) {
       desc: "Lorem ipsum dolor sit amet consectetur.",
       buttonText: "Read More",
       bgColour: "#0060AF",
+      colourName: "Colour Name",
+      colourCode: "Colour Code",
     },
     {
       id: 5,
@@ -40,6 +48,8 @@ export default function Colours({ colours }) {
       desc: "Lorem ipsum dolor sit amet consectetur.",
       buttonText: "Read More",
       bgColour: "#800404",
+      colourName: "Colour Name",
+      colourCode: "Colour Code",
     },
     {
       id: 6,
@@ -48,6 +58,8 @@ export default function Colours({ colours }) {
       desc: "Lorem ipsum dolor sit amet consectetur.",
       buttonText: "Read More",
       bgColour: "#ECA628",
+      colourName: "Colour Name",
+      colourCode: "Colour Code",
     },
   ];
   return (
@@ -76,12 +88,29 @@ export default function Colours({ colours }) {
                 className="flex-none"
                 style={{
                   width: `calc((100% - ${16 * (6 - 1)}px) / 6)`,
-                  height: "158px",
-                  backgroundColor: colourObj.bgColour,
                   marginRight: "16px",
                   boxSizing: "border-box",
                 }}
-              ></div>
+              >
+                <div
+                  className="h-[158px] w-full"
+                  style={{
+                    backgroundColor: colourObj.bgColour,
+                  }}
+                >
+                  <div className="h-[calc(100%-4px)] w-[calc(100%-4px)] m-[2px] border-[2px] border-white box-border">
+                    {/* Inner content can go here if needed */}
+                  </div>
+                </div>
+                <div className="text-center mt-[8px]">
+                  <p className="text-sm font-normal text-[15px] text-[#000000] font-poppins ">
+                    {colourObj.colourName}
+                  </p>
+                  <p className="text-xs text-gray-500 font-lato font-normal text-[14px] ">
+                    {colourObj.colourCode}
+                  </p>
+                </div>
+              </div>
             ))}
           </div>
           {/* <div className="">

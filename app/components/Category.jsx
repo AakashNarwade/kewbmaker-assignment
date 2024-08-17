@@ -13,15 +13,32 @@ export default function Category({ category }) {
           {category?.homeCategoryTitle}
         </h1>
         <div className="flex gap-2 justify-around mt-4">
-          <div className="flex-none w-[622px] h-[522px]">
+          <div className="flex-none w-[622px] h-[522px] relative">
             {category.categories[0]?.image?.node?.sourceUrl && (
-              <Image
-                src={category.categories[0]?.image?.node?.sourceUrl}
-                alt={"First Image"}
-                width={311}
-                height={211}
-                className="object-cover w-full h-full"
-              />
+              <>
+                <Image
+                  src={category.categories[0]?.image?.node?.sourceUrl}
+                  alt={"First Image"}
+                  width={311}
+                  height={211}
+                  className="object-cover w-full h-full"
+                />
+                <div className="h-[76px] w-full absolute bottom-0 bg-[#FF9119] flex justify-between items-center px-[16px]">
+                  <h2 className="text-[#FFFFFF] font-semibold font-poppins text-xl">
+                    {category?.categories[0]?.title}
+                  </h2>
+                  {/* <button className="border-[1px] font-poppins font-semibold text-xs text-[#FF9119] px-[22px] py-[14px] rounded-[20px] bg-[#fff]">
+                    <a href="#" title="Read More" target="">
+                      {category.categories[0]?.homeAboutButton?.title}
+                    </a>
+                  </button> */}
+                  <button className="border-[1px] font-poppins font-semibold text-xs text-[#FF9119] px-[22px] py-[14px] rounded-[20px] bg-[#fff]">
+                    <a href="#" title="Read More" target="">
+                      {"Read More"}
+                    </a>
+                  </button>
+                </div>
+              </>
             )}
           </div>
 

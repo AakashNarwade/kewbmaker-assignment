@@ -1,7 +1,6 @@
 import Head from "next/head";
 
 export default function SEO({ seoData }) {
-  // Safely parse and stringify JSON-LD schema data
   const schemaData = seoData?.schema?.raw ? JSON.parse(seoData.schema.raw) : {};
 
   return (

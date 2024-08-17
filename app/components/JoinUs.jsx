@@ -9,8 +9,8 @@ export default function JoinUs({ joinUsData }) {
         <Image
           src={joinUsData?.homeJoinBackgroundImage?.node?.sourceUrl}
           alt="Background Image"
-          layout="fill" // Makes the image fill the parent div
-          objectFit="cover" // Ensures the image covers the div without distortion
+          layout="fill"
+          objectFit="cover"
           className="z-0"
         />
       </div>
