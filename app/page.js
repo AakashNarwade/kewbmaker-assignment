@@ -180,11 +180,11 @@ export default function HomePage() {
   }
 
   return (
-    <div className="">
+    <div>
+      <SEO seoData={seoData} />
       <Banner banners={homeData.banners} />
       <AboutSection aboutSection={homeData} />
       <Category category={homeData} />
-      <SEO seoData={seoData} />
       <ServicesSection service={homeData} />
       <Colours colours={homeData} />
       <JoinUs joinUsData={homeData} />
