@@ -11,7 +11,7 @@ import Category from "./components/Category";
 import Colours from "./components/Colours";
 import JoinUs from "./components/JoinUs";
 import Blog from "./components/Blog";
-
+import { Circles } from "react-loader-spinner";
 
 const GET_HOME_PAGE_DATA = gql`
   query GetHomePageData {
@@ -174,7 +174,16 @@ export default function HomePage() {
   if (!homeData || !seoData) {
     return (
       <div className="flex items-center justify-center min-h-screen">
-        <div>Loading...</div>
+        {/* <div>Loading...</div> */}
+        <Circles
+          height="80"
+          width="80"
+          color="#0060af"
+          ariaLabel="circles-loading"
+          wrapperStyle={{}}
+          wrapperClass=""
+          visible={true}
+        />
       </div>
     );
   }

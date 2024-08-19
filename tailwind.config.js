@@ -37,6 +37,14 @@ module.exports = {
       borderImage: {
         "gradient-left": "linear-gradient(to bottom, #F5E847, #00AE44)",
       },
+      colors: {
+        "custom-green": "#00AE44",
+        "custom-yellow": "#F5E847",
+      },
+      backgroundImage: {
+        "custom-gradient":
+          "linear-gradient(to bottom, #F5E847 0%, #00AE44 100%)",
+      },
     },
   },
   plugins: [
