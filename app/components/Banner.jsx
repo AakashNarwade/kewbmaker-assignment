@@ -19,6 +19,16 @@ export default function Banner({ banners = [] }) {
             className="object-cover w-full h-full"
           />
           {/* Black Overlay */}
+          {/* Rainbow Image */}
+          <div className="absolute -bottom-[34%] z-40 left-0 right-0">
+            <Image
+              src={"/rainbow.png"}
+              alt={banners[0]?.bannersTitle || "Banner Image"}
+              width={2296}
+              height={428}
+              className="object-cover w-full"
+            />
+          </div>
           <div className="absolute inset-0 bg-black opacity-50"></div>
         </div>
         <div className="absolute top-6 ml-[80px] mt-[166px]">

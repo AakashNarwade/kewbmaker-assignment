@@ -9,9 +9,12 @@ export default function Category({ category }) {
         <h2 className="text-[18px] text-[#000000] font-medium leading-5 font-poppins">
           {category?.homeCategorySubtitle}
         </h2>
-        <h1 className="my-[23px] font-bold text-3xl font-poppins text-[#000000]">
-          {category?.homeCategoryTitle}
-        </h1>
+        <div className="flex items-center gap-[14px]">
+          <h1 className="my-[23px] font-bold text-3xl font-poppins">
+            {category?.homeCategoryTitle}
+          </h1>
+          <Image src="/crayons.png" alt="crayons" width={178} height={10} />
+        </div>
         <div className="flex gap-2 justify-around mt-4">
           <div className="flex-none w-[622px] h-[522px] relative">
             {category.categories[0]?.image?.node?.sourceUrl && (

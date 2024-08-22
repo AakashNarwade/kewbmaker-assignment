@@ -34,9 +34,17 @@ export default function ServicesSection({ service }) {
           <h2 className="text-[18px] text-[#000000] leading-5 font-poppins font-medium">
             {service?.homeServicesSubtitle}
           </h2>
-          <h1 className="my-[23px] font-bold text-3xl mt-[23px] font-poppins text-[#000000]">
-            {service?.homeServicesTitle}
-          </h1>
+          <div className="flex items-center gap-[14px]">
+            <h1 className="my-[23px] font-bold text-3xl font-poppins">
+              {service?.homeServicesTitle}
+            </h1>
+            <Image
+              src="/yellow-crayon.png"
+              alt="crayons"
+              width={178}
+              height={10}
+            />
+          </div>
         </div>
         <div className="flex gap-6 justify-between">
           {imagesList.map((imageObj, i) => (

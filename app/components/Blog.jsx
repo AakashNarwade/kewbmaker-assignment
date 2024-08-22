@@ -62,9 +62,17 @@ export default function Blog({ blogData }) {
           <h2 className="text-[18px] text-[#000000] leading-5 font-poppins font-medium">
             {blogSubtitle}
           </h2>
-          <h1 className="my-[23px] font-bold text-3xl mt-[23px] font-poppins text-[#000000]">
-            {blogTitle}
-          </h1>
+          <div className="flex items-center gap-[24px]">
+            <h1 className="my-[23px] font-bold text-3xl font-poppins">
+              {blogTitle}
+            </h1>
+            <Image
+              src="/blue-crayon.png"
+              alt="crayons"
+              width={178}
+              height={10}
+            />
+          </div>
         </div>
         {/* Grid Layout for Blog Items */}
         <div className="grid grid-cols-3 gap-x-6">

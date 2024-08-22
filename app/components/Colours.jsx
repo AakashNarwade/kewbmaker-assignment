@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default function Colours({ colours }) {
@@ -70,9 +71,17 @@ export default function Colours({ colours }) {
             {colours?.homeColoursSubtitle}
           </h2>
           <div className="flex justify-between items-center">
-            <h1 className="my-[23px] font-bold text-3xl mt-[23px] font-poppins text-[#000000]">
-              {colours?.homeColoursTitle}
-            </h1>
+            <div className="flex items-center gap-[24px]">
+              <h1 className="my-[23px] font-bold text-3xl font-poppins">
+                {colours?.homeColoursTitle}
+              </h1>
+              <Image
+                src="/green-crayon.png"
+                alt="crayons"
+                width={178}
+                height={10}
+              />
+            </div>
             <button className="border-[1px] border-[#00AE44] font-poppins font-semibold text-xs text-[#00AE44] px-[22px] py-[14px] rounded-[20px]">
               <a href="#" title="Explore More" target="">
                 {colours?.homeColoursButton?.title}
@@ -89,7 +98,7 @@ export default function Colours({ colours }) {
                 style={{
                   width: `calc((100% - ${16 * (6 - 1)}px) / 6)`,
                   marginRight: "16px",
-                  boxSizing: "border-box",
+                  // boxSizing: "border-box",
                 }}
               >
                 <div
@@ -98,9 +107,7 @@ export default function Colours({ colours }) {
                     backgroundColor: colourObj.bgColour,
                   }}
                 >
-                  <div className="h-[calc(100%-4px)] w-[calc(100%-4px)] m-[2px] border-[2px] border-white box-border">
-                    {/* Inner content can go here if needed */}
-                  </div>
+                  <div className="h-[calc(100%-4px)] w-[calc(100%-4px)] m-[2px] border-[2px] border-white"></div>
                 </div>
                 <div className="text-center mt-[8px]">
                   <p className="text-sm font-normal text-[15px] text-[#000000] font-poppins ">

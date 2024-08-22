@@ -25,9 +25,13 @@ export default function AboutSection({ aboutSection }) {
         <h2 className="font-bold text-[18px] text-black font-poppins">
           {aboutSection.homeAboutSubtitle}
         </h2>
-        <h1 className="my-[23px] font-bold text-3xl font-poppins">
-          {aboutSection?.homeAboutTitle}
-        </h1>
+        <div className="flex items-center gap-[14px]">
+          <h1 className="my-[23px] font-bold text-3xl font-poppins">
+            {aboutSection?.homeAboutTitle}
+          </h1>
+          <Image src="/red-crayon.png" alt="crayons" width={178} height={10} />
+        </div>
+        {/* <Image src={"/crayons.png"} alt="crayons" width={178} height={10} /> */}
         <div
           className="font-lato leading-6 "
           dangerouslySetInnerHTML={{
