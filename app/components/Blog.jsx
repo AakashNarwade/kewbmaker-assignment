@@ -85,9 +85,6 @@ export default function Blog({ blogData }) {
                   <p className="font-poppins font-semibold pt-[10px] text-[20px] text-[#ffff] leading-5">
                     {blogObj.desc}
                   </p>
-                  {/* <button className="bg-[#FFFFFF] text-[#000000] rounded-[20px] text-xs py-[5px] px-[10px] mt-[4px]">
-                    {blogObj.buttonText}
-                  </button> */}
                 </div>
                 <div className="absolute w-[352px] inset-0 bg-black opacity-35"></div>
               </div>

@@ -93,7 +93,7 @@ export default function Colours({ colours }) {
                 }}
               >
                 <div
-                  className="h-[158px] w-full"
+                  className="h-[158px] w-full p-[6px]"
                   style={{
                     backgroundColor: colourObj.bgColour,
                   }}
@@ -113,14 +113,6 @@ export default function Colours({ colours }) {
               </div>
             ))}
           </div>
-          {/* <div className="">
-            <h3 className="font-poppins font-normal text-[15px]  text-center">
-              hello
-            </h3>
-            <h4 className="font-poppins font-normal text-[14px] text-gray-700">
-              hello
-            </h4>
-          </div> */}
         </>
       </div>
     </div>

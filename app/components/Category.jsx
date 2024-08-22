@@ -27,11 +27,6 @@ export default function Category({ category }) {
                   <h2 className="text-[#FFFFFF] font-semibold font-poppins text-xl">
                     {category?.categories[0]?.title}
                   </h2>
-                  {/* <button className="border-[1px] font-poppins font-semibold text-xs text-[#FF9119] px-[22px] py-[14px] rounded-[20px] bg-[#fff]">
-                    <a href="#" title="Read More" target="">
-                      {category.categories[0]?.homeAboutButton?.title}
-                    </a>
-                  </button> */}
                   <button className="border-[1px] font-poppins font-semibold text-xs text-[#FF9119] px-[22px] py-[14px] rounded-[20px] bg-[#fff]">
                     <a href="#" title="Read More" target="">
                       {"Read More"}
