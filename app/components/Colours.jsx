@@ -90,16 +90,16 @@ export default function Colours({ colours }) {
           </div>
         </div>
         <>
-          <div className="flex flex-grow mt-[20px]">
+          <div className="flex flex-grow gap-4 mt-[20px]">
             {coloursList.map((colourObj) => (
               <div
                 key={colourObj.id}
-                className="flex-none"
-                style={{
-                  width: `calc((100% - ${16 * (6 - 1)}px) / 6)`,
-                  marginRight: "16px",
-                  // boxSizing: "border-box",
-                }}
+                className=" flex-1 min-w-[calc((100%-5*16px)/6)]"
+                // style={{
+                //   width: `calc((100% - ${16 * (6 - 1)}px) / 6)`,
+                //   marginRight: "16px",
+                //   // boxSizing: "border-box",
+                // }}
               >
                 <div
                   className="h-[158px] w-full p-[6px]"
